@@ -24,3 +24,4 @@ do
  yum install $PACKAGE -y
  VALIDATE $? "PACKAGE INSTALLATION"
 done
+#own ga okkasari  inka loops rayu
