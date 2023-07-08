@@ -21,3 +21,4 @@ fi
 #conditions lo mathram else tarvta exit status pass chyali
 #functions lo ala cheyalemu
 #okavela exit1 echi kenda else isthe neeku script execute avvadhu
+#check chesuko manchiga
