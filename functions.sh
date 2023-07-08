@@ -34,6 +34,8 @@ VALIDATE $? "GIT installed"
 yum install tree -y
 
 VALIDATE $? "HTTPD installed"
+
+#=========================================================================================================================
 #excample
 #this the excample  #!/bin/bash
 #USERID=$(id -u)
@@ -66,4 +68,4 @@ VALIDATE $? "HTTPD installed"
 #VALIDATE $? "vim installed"
 #yum install openssh-server -y
 #VALIDATE $? "sshd installed"
-
+#edi own ga rasanu kenda excample
