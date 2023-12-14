@@ -1,0 +1,10 @@
+Installing nagios NRPE on AWS EC2 Amazon AMI boxes
+Grab all of the NRPE items via yum
+
+yum install nagios-plugins-all nagios-plugins-nrpe nrpe
+chkconfig nrpe on
+Update the Config for NRPE
+update the config by checking allowed_hosts and
+
+vi /etc/nagios/nrpe.cfg
+
