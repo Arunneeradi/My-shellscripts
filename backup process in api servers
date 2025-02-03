@@ -1,0 +1,125 @@
+backup process in api servers
+#!/bin/bash
+echo "bkp started"
+echo " "
+dd=$(date +'%d%m%Y-%H%p')
+cd /home/apparao_it
+mkdir myplexbkp_date
+cd myplexbkp_date
+mkdir etc opt
+
+
+
+cp -r /etc/myplex /home/apparao_it/myplexbkp_date/etc
+cp -r /opt/myplex /home/apparao_it/myplexbkp_date/opt
+
+
+
+
+
+(copy myplex from /etc and /opt to created directory)
+
+
+
+################################################################################################################################################################
+backup process in sms servers
+#!/bin/bash
+echo "bkp started"
+echo " "
+dd=$(date +'%d%m%Y-%H%p')
+cd /home/apparao_it
+mkdir /home/apparao_it/bkp_date
+cp -r /DATA/sms/application-dev.yml /home/apparao_it/bkp_date
+cp -r /DATA/sms/SMS-*-SNAPSHOT.jar /home/apparao_it/bkp_date
+cp -r /DATA/Billing/application.yml /home/apparao_it/bkp_date
+cp -r /DATA/Billing/Billing-*-SNAPSHOT.jar /home/apparao_it/bkp_date
+
+
+
+##########################################################################################################################################################
+in cst servers
+#!/bin/bash
+echo "bkp started"
+echo " "
+dd=$(date +'%d%m%Y-%H%p')
+mkdir /home/apparao_it/cstbkp_$dd
+cp -r /opt/apache-tomcat-7.0.65/webapps/*.war /home/apparao_it/cstbkp_$dd
+cp -r /etc/myplex/content-store/content-store.properties /home/apparao_it/cstbkp_$dd
+cp -r /etc/myplex/content-store/content-store-mappings.properties /home/apparao_it/cstbkp_$dd
+echo "bkp completed"
+
+
+
+
+
+#######################################################################################################################################################################
+in cms servers
+#!/bin/bash
+echo "bkp started"
+echo " "
+dd=$(date +'%d%m%Y-%H%p')
+mkdir /home/apparao_it/bkp_cms_$dd
+
+
+
+cp -r /opt/apache-tomcat-7.0.47/webapps/*.war  /home/apparao_it/bkp_cms_$dd
+
+
+
+cp -r /opt/apalya/myplex2/cms.properties  /home/apparao_it/bkp_cms_$dd
+
+
+
+
+
+###############################################################################################################################################################################
+crm backup
+#!/bin/bash
+echo "bkp started"
+echo " "
+dd=$(date +'%d%m%Y-%H%p')
+mkdir bkp_date
+
+
+
+cp -r /opt/apache-tomcat-7.0.47/webapps/*.war  /home/apparao_it/bkp_cms_$dd
+
+
+
+cp -r /opt/apalya/myplex2/cms.properties  /home/apparao_it/bkp_cms_$dd
+
+
+
+cp -r /opt/apalya/myplex2/cms_menu.xml  /home/apparao_it/bkp_cms_$dd
+
+
+
+
+
+######################################################################################################################################################################################
+mpass in pwa servers
+#!/bin/bash
+echo "bkp started"
+echo " "
+dd=$(date +'%d%m%Y-%H%p')
+
+
+
+mkdir /home/apparao_it/mmtvbkp_$dd
+
+
+
+cp -r /var/www/mmtv /home/apparao_it/mmtvbkp_$dd
+
+
+
+
+
+
+
+
+
+
+
+
+
